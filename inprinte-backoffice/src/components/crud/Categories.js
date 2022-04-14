@@ -1,7 +1,7 @@
 import {List, Datagrid, TextField, Edit, SimpleForm, TextInput, BooleanInput, Create, EditButton, DeleteButton} from 'react-admin';
   
   export const CategoriesList = props => (
-    <List {...props}>
+    <List {...props} perPage={500}>
       <Datagrid rowClick="edit">
         <TextField source="id" label="Id"/>
         <TextField source="name" label="Catégorie"/>

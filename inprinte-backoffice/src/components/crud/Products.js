@@ -2,7 +2,7 @@ import {List, Datagrid, SelectInput, BooleanInput, TextField, Edit, SimpleForm, 
 import React from 'react'
 
   export const ProductsList = props => (
-    <List {...props}>
+    <List {...props} perPage={500}>
       <Datagrid rowClick="edit">
         <TextField source="id" label="Id"/>
         <TextField source="name" label="Nom du produit"/>

@@ -2,7 +2,7 @@ import {List, Datagrid, TextField, EmailField, Edit, SimpleForm, TextInput, Crea
 import React from 'react';
 
   export const UserList = props => (
-    <List {...props}>
+    <List {...props} perPage={500}>
       <Datagrid rowClick="edit">
         <TextField source="id" label="Id"/>
         <TextField source="firstname" label="Prénom"/>

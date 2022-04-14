@@ -2,7 +2,7 @@ import {List, Datagrid, TextField, Edit, SimpleForm, TextInput, EditButton, Crea
   
   export const RatesList = props => (
     <List {...props}>
-      <Datagrid rowClick="edit">
+      <Datagrid rowClick="edit" perPage={500}>
         <TextField source="id" label="Id"/>
         <TextField source="firstname" label="Prénom"/>
         <TextField source="lastname" label="Nom"/>
